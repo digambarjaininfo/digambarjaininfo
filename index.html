@@ -2,32 +2,121 @@
 <html lang="hi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>दिगंबर जैन जानकारी केंद्र | Digambar Jain Info</title>
-<meta name="description" content="दिगंबर जैन समाज, जिनालयों, धार्मिक कार्यक्रमों, आचार्य भगवंतों के विहार और समाचारों की जानकारी।">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>दिगंबर जैन जानकारी केंद्र</title>
+<meta name="description" content="दिगंबर जैन धर्म, जिनालय, विहार, धार्मिक कार्यक्रम और समाजोपयोगी समाचारों की व्यवस्थित जानकारी।">
 <meta name="robots" content="index,follow">
-<meta property="og:title" content="दिगंबर जैन जानकारी केंद्र">
-<meta property="og:description" content="दिगंबर जैन समाज की जानकारी, मंदिर, कार्यक्रम और समाचार एक स्थान पर।">
-<meta property="og:type" content="website">
 <style>
-:root{--brown:#432b1b;--gold:#bd8b38;--cream:#fffaf1;--paper:#fff;--line:#eadcc5;--muted:#70665b}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;color:var(--brown);background:var(--cream);line-height:1.75}
-header{padding:56px 20px;text-align:center;color:#fff;background:linear-gradient(135deg,#402719,#986523)}header h1{font-size:clamp(30px,6vw,52px);margin:0}header p{margin:8px 0 0}
-nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}nav div{max-width:1080px;margin:auto;padding:10px 14px;display:flex;gap:8px;overflow:auto}nav a{white-space:nowrap;text-decoration:none;color:var(--brown);padding:7px 12px;border-radius:20px}nav a:hover{background:#f6ecd9}
-main{max-width:1080px;margin:auto;padding:26px 16px}.hero,.card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;margin-bottom:18px;box-shadow:0 6px 22px #583c170b}.tag{display:inline-block;background:#f7ebd2;color:#704918;border-radius:30px;padding:3px 12px;font-size:14px;font-weight:700}h2{color:#754b1c;margin-top:0}.muted{color:var(--muted);font-size:14px}.notice{padding:14px 16px;border-left:4px solid var(--gold);background:#fff7e8;border-radius:8px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}footer{text-align:center;padding:28px 16px;background:#302117;color:#fff}footer small{color:#dfd0bc}
+:root{--ink:#2d2118;--brown:#4a2d1b;--gold:#b88732;--gold2:#d7b56a;--cream:#fbf7ef;--paper:#fffdf8;--line:#e8dcc6;--muted:#75695b}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Noto Serif Devanagari","Nirmala UI",serif;line-height:1.8}
+a{color:inherit}
+.topline{height:4px;background:linear-gradient(90deg,var(--brown),var(--gold2),var(--brown))}
+header{background:rgba(255,253,248,.96);border-bottom:1px solid var(--line);padding:18px 20px 12px;text-align:center}
+.brand{font-size:clamp(25px,4vw,40px);letter-spacing:.02em;color:var(--brown);font-weight:700}
+.subtitle{font-family:system-ui,sans-serif;color:var(--muted);font-size:14px;margin-top:2px}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,253,248,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .inner{max-width:1120px;margin:auto;display:flex;justify-content:center;gap:4px;overflow:auto;padding:8px 12px}
+nav a{font-family:system-ui,sans-serif;text-decoration:none;white-space:nowrap;padding:8px 14px;border-radius:999px;font-size:14px;color:var(--brown)}
+nav a:hover{background:#f3ead9}
+.hero{max-width:1120px;margin:28px auto 20px;padding:42px 22px 38px;text-align:center;position:relative;overflow:hidden}
+.hero:before,.hero:after{content:"";display:block;width:120px;height:1px;background:var(--gold);margin:auto}
+.hero:after{margin-top:28px}
+.om-wrap{width:170px;height:170px;margin:18px auto 12px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 40px rgba(70,43,20,.10);border:1px solid #ead8b5;overflow:hidden}
+.om-wrap img{width:100%;height:100%;object-fit:contain;padding:5px}
+.hero h1{font-size:clamp(30px,6vw,56px);line-height:1.2;margin:12px 0;color:var(--brown)}
+.hero .lead{max-width:720px;margin:0 auto;color:#63564a;font-size:17px}
+.motto{display:inline-block;margin-top:20px;padding:7px 22px;border-top:1px solid var(--gold2);border-bottom:1px solid var(--gold2);font-size:15px;color:var(--brown)}
+main{max-width:1120px;margin:auto;padding:0 18px 50px}
+.section-title{text-align:center;margin:42px 0 20px}
+.section-title h2{margin:0;color:var(--brown);font-size:28px}
+.section-title p{margin:4px 0;color:var(--muted);font-family:system-ui,sans-serif;font-size:14px}
+.feature{display:grid;grid-template-columns:1.25fr .75fr;gap:20px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:0 8px 30px rgba(65,43,25,.055)}
+.card h3{margin:0 0 8px;color:var(--brown);font-size:23px}
+.badge{display:inline-block;color:#6d4b1e;border:1px solid #dfc995;background:#fbf4e4;border-radius:999px;padding:3px 12px;font-family:system-ui,sans-serif;font-size:12px;margin-bottom:12px}
+.place{font-size:21px;font-weight:700;color:#3d2b20}
+.meta{color:var(--muted);font-family:system-ui,sans-serif;font-size:14px}
+.link{display:inline-block;margin-top:14px;color:#79551e;text-decoration:none;border-bottom:1px solid var(--gold2);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.simple{min-height:135px}
+.simple h3{font-size:19px}
+footer{text-align:center;padding:34px 18px;background:#352319;color:#f8f0e3;font-family:system-ui,sans-serif}
+footer small{color:#d9c7ae}
+@media(max-width:800px){.feature{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.hero{padding-top:25px}.om-wrap{width:145px;height:145px}}
 </style>
 </head>
-<body id="top">
-<header><h1>दिगंबर जैन जानकारी केंद्र</h1><p>जिनधर्म की प्रभावना • मंदिर • विहार • कार्यक्रम • समाचार</p></header>
-<nav><div><a href="#top">जैन होम</a><a href="#about">हमारे बारे में</a><a href="#vihar">विहार सूचना</a><a href="#temples">जिनालय</a><a href="#events">कार्यक्रम</a><a href="#news">समाचार</a><a href="#submit">जानकारी भेजें</a></div></nav>
-<main>
-<section class="hero"><span class="tag">स्वागत है</span><h2>दिगंबर जैन समाज की जानकारी, एक स्थान पर</h2><p>इस मंच का उद्देश्य दिगंबर जैन धर्म, जिनालयों, धार्मिक आयोजनों, प्रवास और समाजोपयोगी समाचारों को व्यवस्थित रूप से उपलब्ध कराना है। प्रत्येक अपडेट के साथ तारीख और जहाँ संभव हो, स्रोत भी जोड़ा जाएगा।</p><div class="notice"><strong>सत्यापन नीति:</strong> विहार और वर्तमान निवास जैसी बदलती जानकारी को स्थानीय सूचना के रूप में दिखाया जाएगा और पुष्टि मिलने पर अपडेट किया जाएगा।</div></section>
-<section id="about" class="card"><h2>इस वेबसाइट के बारे में</h2><p>दिगंबर जैन जानकारी केंद्र एक सामुदायिक सूचना मंच है। यहाँ प्रकाशित जानकारी का उद्देश्य समाज के लोगों को उपयोगी विवरण तक पहुँचाना और विश्वसनीय सार्वजनिक जानकारी को खोजने योग्य बनाना है।</p></section>
-<section id="vihar" class="card"><h2>आचार्य श्री 108 भारत भूषण जी महाराज — प्रवास सूचना</h2><p><strong>स्थानीय रूप से प्राप्त सूचना:</strong> 10 अक्टूबर 2026 को मिली जानकारी के अनुसार आचार्य श्री ननौता, जिला सहारनपुर, उत्तर प्रदेश में बड़े दिगंबर जैन मंदिर के निकट स्थित दिगंबर जैन भवन में विराजमान बताए गए हैं।</p><p class="muted">यह लाइव लोकेशन या स्वतंत्र रूप से सत्यापित घोषणा नहीं है। यात्रा से पहले स्थानीय जैन समाज/मंदिर से पुष्टि करें। नई जानकारी मिलने पर यह प्रविष्टि संशोधित की जाएगी।</p></section>
-<section id="temples" class="card"><h2>जिनालय एवं तीर्थ</h2><div class="grid"><article><h3>श्री पंचायती दिगंबर जैन मंदिर, ननौता</h3><p>मंदिर का विस्तृत परिचय, मूलनायक, इतिहास, पूजा-अनुष्ठान और संपर्क विवरण सत्यापन के बाद यहाँ प्रकाशित किए जाएंगे।</p><p class="muted">स्थान: ननौता, जिला सहारनपुर, उत्तर प्रदेश</p></article><article><h3>अन्य जिनालय एवं तीर्थ</h3><p>दिगंबर जैन मंदिरों, तीर्थक्षेत्रों और समाज द्वारा साझा की गई उपयोगी जानकारी के लिए यह सूची आगे बढ़ाई जाएगी।</p></article></div></section>
-<section id="events" class="card"><h2>धार्मिक कार्यक्रम</h2><p>अभिषेक, पूजन, प्रवचन, पंचकल्याणक, वेदी प्रतिष्ठा, दशलक्षण पर्व, चातुर्मास और अन्य आयोजनों की तिथि, स्थान तथा उपलब्ध सार्वजनिक स्रोत यहाँ जोड़े जाएंगे।</p></section>
-<section id="news" class="card"><h2>समाचार एवं अपडेट</h2><p>नई जानकारी मिलने पर इस भाग में तारीख, संक्षिप्त विवरण और संबंधित सार्वजनिक स्रोत/वीडियो लिंक सहित अपडेट प्रकाशित किए जाएंगे।</p></section>
-<section id="submit" class="card"><h2>जानकारी कैसे साझा करें</h2><p>अपडेट तैयार करने के लिए संदेश में स्थान, तारीख, कार्यक्रम/समाचार का विवरण और उपलब्ध फोटो, वीडियो या स्रोत लिंक दें। प्रकाशित करने से पहले निजी फोन नंबर या संवेदनशील विवरण साझा करने की अनुमति अवश्य लें।</p><p class="muted">यह वेबसाइट अभी प्रारंभिक संस्करण है। संपर्क फॉर्म और स्वचालित पोस्टिंग सुविधा अभी जोड़ी नहीं गई है।</p></section>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="brand">दिगंबर जैन जानकारी केंद्र</div>
+  <div class="subtitle">धर्म • दर्शन • जिनालय • विहार • समाज • संस्कृति</div>
+</header>
+<nav><div class="inner">
+  <a href="#home">जैन होम</a><a href="#vihar">आचार्य श्री</a><a href="#temples">जिनालय</a><a href="#history">विहार इतिहास</a><a href="#news">समाचार</a><a href="#events">कार्यक्रम</a><a href="#gallery">फोटो</a><a href="#videos">वीडियो</a>
+</div></nav>
+<main id="home">
+<section class="hero">
+  <div class="om-wrap"><img src="assets/jain-om.jpg" alt="जैन ओंकार — णमोकार मंत्र के पाँच परमेष्ठियों का प्रतीक"></div>
+  <h1>दिगंबर जैन जानकारी केंद्र</h1>
+  <p class="lead">दिगंबर जैन धर्म और समाज से जुड़ी उपयोगी, व्यवस्थित और स्रोत-सहित जानकारी के लिए एक शांत और सरल डिजिटल मंच।</p>
+  <div class="motto">सम्यग्दर्शन • सम्यग्ज्ञान • सम्यक्चारित्र</div>
+</section>
+
+<section id="vihar">
+<div class="section-title"><h2>आचार्य श्री का वर्तमान विहार</h2><p>प्राप्त स्थानीय सूचना को स्पष्ट रूप से प्रस्तुत करने का प्रयास</p></div>
+<div class="feature">
+  <article class="card">
+    <span class="badge">वर्तमान प्रवास</span>
+    <h3>आचार्य श्री 108 भारत भूषण जी महाराज</h3>
+    <div class="place">ननौता, जिला सहारनपुर, उत्तर प्रदेश</div>
+    <p>10 अक्टूबर 2026 को प्राप्त जानकारी के अनुसार आचार्य श्री ननौता में बड़े दिगंबर जैन मंदिर के निकट स्थित दिगंबर जैन भवन में विराजमान बताए गए हैं।</p>
+    <p class="meta">यह स्थानीय रूप से प्राप्त सूचना है; यात्रा से पहले स्थानीय जैन समाज या मंदिर से पुष्टि करना उचित है।</p>
+    <a class="link" href="#history">विहार इतिहास देखें →</a>
+  </article>
+  <aside class="card">
+    <span class="badge">इस वेबसाइट पर</span>
+    <h3>धार्मिक जानकारी का स्थायी रिकॉर्ड</h3>
+    <p>वर्तमान स्थान बदलने पर पुराने प्रवास को इतिहास में सुरक्षित रखा जा सकता है। इससे वर्तमान सूचना और पूर्व विहार का रिकॉर्ड अलग-अलग स्पष्ट रहेगा।</p>
+  </aside>
+</div>
+</section>
+
+<section id="temples">
+<div class="section-title"><h2>जिनालय एवं तीर्थ</h2><p>मंदिरों की प्रमाणित और उपयोगी जानकारी क्रमशः जोड़ी जाएगी</p></div>
+<div class="grid">
+  <article class="card simple"><h3>श्री पंचायती दिगंबर जैन मंदिर, ननौता</h3><p class="meta">ननौता, जिला सहारनपुर, उत्तर प्रदेश</p><p>इतिहास, मूलनायक, धार्मिक गतिविधियाँ और सार्वजनिक संपर्क जानकारी सत्यापन के बाद जोड़ी जाएगी।</p></article>
+  <article class="card simple"><h3>अन्य जिनालय</h3><p>देशभर के दिगंबर जैन जिनालयों की जानकारी आगे इस संग्रह में व्यवस्थित की जाएगी।</p></article>
+  <article class="card simple"><h3>तीर्थक्षेत्र</h3><p>प्रमुख दिगंबर जैन तीर्थों का परिचय, मार्ग और उपयोगी सार्वजनिक जानकारी क्रमशः जोड़ी जाएगी।</p></article>
+</div>
+</section>
+
+<section id="history">
+<div class="section-title"><h2>विहार इतिहास</h2><p>आचार्य श्री एवं मुनिराजों के पूर्व प्रवास का क्रमबद्ध रिकॉर्ड</p></div>
+<div class="card"><p>नई प्रवास-सूचना मिलने पर वर्तमान स्थान को अपडेट किया जाएगा और उचित होने पर पिछला स्थान यहाँ इतिहास के रूप में सुरक्षित रखा जाएगा।</p></div>
+</section>
+
+<section id="news">
+<div class="section-title"><h2>समाचार</h2><p>धार्मिक और समाजोपयोगी नवीन जानकारी</p></div>
+<div class="card"><p>नई सूचना मिलने पर तारीख, स्थान, संक्षिप्त विवरण और उपलब्ध सार्वजनिक स्रोत के साथ समाचार यहाँ जोड़े जाएंगे।</p></div>
+</section>
+
+<section id="events">
+<div class="section-title"><h2>धार्मिक कार्यक्रम</h2><p>आगामी एवं संपन्न धार्मिक आयोजन</p></div>
+<div class="card"><p>अभिषेक, पूजन, विधान, प्रवचन, पंचकल्याणक, वेदी प्रतिष्ठा, दशलक्षण पर्व और अन्य कार्यक्रमों की जानकारी यहाँ व्यवस्थित की जाएगी।</p></div>
+</section>
+
+<section id="gallery">
+<div class="section-title"><h2>फोटो</h2><p>जिनालय, विहार और धार्मिक आयोजनों का चित्र-संग्रह</p></div>
+<div class="card"><p>आप फोटो भेजेंगे तो उन्हें संबंधित स्थान, कार्यक्रम या समाचार के साथ व्यवस्थित किया जा सकेगा।</p></div>
+</section>
+
+<section id="videos">
+<div class="section-title"><h2>वीडियो</h2><p>प्रवचन, कार्यक्रम और अन्य सार्वजनिक वीडियो</p></div>
+<div class="card"><p>YouTube या अन्य सार्वजनिक वीडियो लिंक मिलने पर उन्हें संबंधित जानकारी के साथ जोड़ा जा सकेगा।</p></div>
+</section>
 </main>
-<footer><strong>दिगंबर जैन जानकारी केंद्र</strong><br><small>समाज की जानकारी को व्यवस्थित, स्पष्ट और स्रोत-सहित प्रस्तुत करने का प्रयास।</small></footer>
-</body></html>
+<footer><strong>दिगंबर जैन जानकारी केंद्र</strong><br><small>सत्य • स्पष्टता • स्रोत-सहित जानकारी</small></footer>
+</body>
+</html>
